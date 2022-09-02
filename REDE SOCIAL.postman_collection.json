@@ -9,8 +9,28 @@
 		{
 			"name": "POST USUÁRIO",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jvalves2018@gmail.com\",\r\n    \"nome\": \"João Victor\",\r\n    \"username\": \"jxvictor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario"
+					]
+				}
 			},
 			"response": []
 		}
